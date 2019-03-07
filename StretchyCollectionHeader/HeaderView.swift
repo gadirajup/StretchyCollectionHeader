@@ -21,7 +21,6 @@ class HeaderView: UICollectionReusableView {
 
         addSubview(imageView)
         fillSuperView(image: imageView)
-
     }
     
     func fillSuperView(image: UIImageView) {

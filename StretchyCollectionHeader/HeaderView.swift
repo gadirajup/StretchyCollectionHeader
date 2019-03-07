@@ -26,8 +26,8 @@ class HeaderView: UICollectionReusableView {
     func fillSuperView(image: UIImageView) {
         image.translatesAutoresizingMaskIntoConstraints = false
         image.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        image.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        image.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        image.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        image.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         image.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
     

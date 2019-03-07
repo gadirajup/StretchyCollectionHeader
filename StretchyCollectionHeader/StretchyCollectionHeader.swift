@@ -8,44 +8,46 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-private let headerIdentifier = "Header"
-
-
 class StretchyCollectionHeader: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    
+    private let reuseIdentifier = "Cell"
+    private let headerIdentifier = "Header"
+
     fileprivate let padding: CGFloat = 16
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        // Setup
+        setupLayout()
+        setupCollectionView()
+    }
+    
+    fileprivate func setupCollectionView() {
+        // Ignore Notch
+        collectionView.contentInsetAdjustmentBehavior = .never
         
-        // Layout Customization
-        if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.sectionInset = .init(top: padding, left: padding, bottom: padding, right: padding)
-        }
-
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+        
         // Do any additional setup after loading the view.
         collectionView.backgroundColor = .white
         
         // Register your header
         collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerIdentifier)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    
+    fileprivate func setupLayout() {
+        // Layout Customization
+        if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.sectionInset = .init(top: padding, left: padding, bottom: padding, right: padding)
+        }
     }
-    */
 
     // MARK: UICollectionViewDataSource
     

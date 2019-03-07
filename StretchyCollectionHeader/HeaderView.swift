@@ -9,10 +9,27 @@
 import UIKit
 
 class HeaderView: UICollectionReusableView {
+    
+    let imageView: UIImageView = {
+        let iv = UIImageView(image: #imageLiteral(resourceName: "headerPhoto"))
+        iv.contentMode = .scaleAspectFill
+        return iv
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        backgroundColor = .red
+
+        addSubview(imageView)
+        fillSuperView(image: imageView)
+
+    }
+    
+    func fillSuperView(image: UIImageView) {
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        image.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        image.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        image.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {

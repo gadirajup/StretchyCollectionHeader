@@ -15,6 +15,8 @@
 		A4E76C222230998D00897D2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E76C202230998D00897D2B /* LaunchScreen.storyboard */; };
 		A4E76C2D2230998D00897D2B /* StretchyCollectionHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E76C2C2230998D00897D2B /* StretchyCollectionHeaderTests.swift */; };
 		A4E76C382230998D00897D2B /* StretchyCollectionHeaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E76C372230998D00897D2B /* StretchyCollectionHeaderUITests.swift */; };
+		A4E76C46223099CB00897D2B /* StretchyCollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E76C45223099CB00897D2B /* StretchyCollectionHeader.swift */; };
+		A4E76C4822309B6F00897D2B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E76C4722309B6F00897D2B /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A4E76C332230998D00897D2B /* StretchyCollectionHeaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StretchyCollectionHeaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E76C372230998D00897D2B /* StretchyCollectionHeaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyCollectionHeaderUITests.swift; sourceTree = "<group>"; };
 		A4E76C392230998D00897D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E76C45223099CB00897D2B /* StretchyCollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyCollectionHeader.swift; sourceTree = "<group>"; };
+		A4E76C4722309B6F00897D2B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				A4E76C142230998C00897D2B /* AppDelegate.swift */,
+				A4E76C45223099CB00897D2B /* StretchyCollectionHeader.swift */,
+				A4E76C4722309B6F00897D2B /* HeaderView.swift */,
 				A4E76C162230998C00897D2B /* ViewController.swift */,
 				A4E76C182230998C00897D2B /* Main.storyboard */,
 				A4E76C1E2230998D00897D2B /* Assets.xcassets */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E76C4822309B6F00897D2B /* HeaderView.swift in Sources */,
+				A4E76C46223099CB00897D2B /* StretchyCollectionHeader.swift in Sources */,
 				A4E76C172230998C00897D2B /* ViewController.swift in Sources */,
 				A4E76C1D2230998C00897D2B /* StretchyCollectionHeader.xcdatamodeld in Sources */,
 				A4E76C152230998C00897D2B /* AppDelegate.swift in Sources */,
